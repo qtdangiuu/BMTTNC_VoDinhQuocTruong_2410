@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Thực hành Bảo mật Thông tin</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Arial", sans-serif}
+.w3-bar-block .w3-bar-item {padding:20px}
+</style>
+</head>
+<body>
+
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button">Close Menu</a>
+  <a href="#ciphers" onclick="w3_close()" class="w3-bar-item w3-button">Danh mục Thuật toán</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">Giới thiệu</a>
+</nav>
+
+<div class="w3-top">
+  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+    <div class="w3-center w3-padding-16" style="font-weight: bold; letter-spacing: 2px;">AN TOÀN THÔNG TIN</div>
+  </div>
+</div>
+  
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+  <div class="w3-container w3-center w3-padding-32">
+    <h2 style="font-weight: bold;">CÁC THUẬT TOÁN MÃ HOÁ CƠ BẢN TRONG BẢO MẬT THÔNG TIN</h2>
+    <p class="w3-text-grey">Vui lòng chọn một trong các thuật toán mật mã cổ điển và hiện đại dưới đây để thử nghiệm</p>
+  </div>
+
+  <div class="w3-row-padding w3-padding-16 w3-center" id="ciphers">
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card w3-padding-16 w3-hover-shadow" style="background-color: #f9f9f9; min-height: 220px;">
+        <h3 style="font-weight: bold; color: #1a73e8;">Caesar Cipher</h3>
+        <p>Thuật toán dịch chuyển bảng chữ cái theo một hằng số K đơn giản.</p>
+        <p><a href="/caesar" class="w3-button w3-black w3-round">Khám phá &rarr;</a></p>
+      </div>
+    </div>
+    
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card w3-padding-16 w3-hover-shadow" style="background-color: #f9f9f9; min-height: 220px;">
+        <h3 style="font-weight: bold; color: #1a73e8;">Vigenère Cipher</h3>
+        <p>Hệ mật mã đa bảng chữ cái, cải tiến dựa trên việc lặp lại một từ khóa chuỗi.</p>
+        <p><a href="/vigenere" class="w3-button w3-black w3-round">Khám phá &rarr;</a></p>
+      </div>
+    </div>
+    
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card w3-padding-16 w3-hover-shadow" style="background-color: #f9f9f9; min-height: 220px;">
+        <h3 style="font-weight: bold; color: #1a73e8;">Playfair Cipher</h3>
+        <p>Thuật toán đối xứng mã hóa từng cặp ký tự (digraph) bằng ma trận kích thước 5x5.</p>
+        <p><a href="/playfair" class="w3-button w3-black w3-round">Khám phá &rarr;</a></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-col m2 l2">&nbsp;</div> <div class="w3-third w3-margin-bottom">
+      <div class="w3-card w3-padding-16 w3-hover-shadow" style="background-color: #f9f9f9; min-height: 220px;">
+        <h3 style="font-weight: bold; color: #1a73e8;">Rail Fence Cipher</h3>
+        <p>Kỹ thuật mã hóa hoán vị theo mô hình ziczac (đường ray) với độ sâu cố định.</p>
+        <p><a href="/railfence" class="w3-button w3-black w3-round">Khám phá &rarr;</a></p>
+      </div>
+    </div>
+    
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card w3-padding-16 w3-hover-shadow" style="background-color: #f9f9f9; min-height: 220px;">
+        <h3 style="font-weight: bold; color: #1a73e8;">Transposition</h3>
+        <p>Thuật toán hoán vị dòng cột, thay đổi hoàn toàn vị trí của các ký tự gốc.</p>
+        <p><a href="/transposition" class="w3-button w3-black w3-round">Khám phá &rarr;</a></p>
+      </div>
+    </div>
+    
+    <div class="w3-col m2 l2">&nbsp;</div>
+  </div>
+
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+  
+  <hr id="about">
+
+  <div class="w3-container w3-padding-32 w3-center">  
+    <h3>Về Bài Thực Hành</h3><br>
+    <div class="w3-padding-16">
+      <h4><b>An toàn và Bảo mật thông tin nâng cao</b></h4>
+      <p>Hệ thống hỗ trợ trực quan hóa các thuật toán mã hóa cổ điển dòng chảy (Stream Cipher) và khối (Block Cipher). Nhằm mục đích phục vụ nghiên cứu, học tập các cơ chế bảo mật cốt lõi, giúp hiểu sâu hơn về cách thức toàn vẹn và bảo mật dữ liệu hoạt động trong môi trường số hóa.</p>
+    </div>
+  </div>
+  <hr>
+  
+  <footer class="w3-row-padding w3-padding-32 w3-center">
+    <p>Hệ Thống Trực Quan Hóa Thuật Toán Mật Mã &copy; 2026</p>
+    <p>Được phát triển bởi Võ Đinh Quốc Trường <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  </footer>
+
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
